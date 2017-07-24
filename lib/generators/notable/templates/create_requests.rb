@@ -8,7 +8,7 @@ class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version
       t.text :action
       t.integer :status
       t.text :url
-      t.string :request_id
+      t.string :request_idnum
       t.string :ip
       t.text :user_agent
       t.text :referrer

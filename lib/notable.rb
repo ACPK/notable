@@ -67,7 +67,7 @@ module Notable
     RequestStore.store.delete(:notable_notes)
   end
 
-  def self.track_job(job, job_id, queue, created_at)
+  def self.track_job(job, job_idnum, queue, created_at)
     exception = nil
     notes = nil
     start_time = Time.now
@@ -91,7 +91,7 @@ module Notable
           note_type: note[:note_type],
           note: note[:note],
           job: job,
-          job_id: job_id,
+          job_idnum: job_idnum,
           queue: queue,
           runtime: runtime,
           queued_time: queued_time

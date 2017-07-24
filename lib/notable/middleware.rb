@@ -51,7 +51,7 @@ module Notable
               action: action,
               status: status,
               params: params,
-              request_id: request.uuid,
+              request_idnum: request.uuid,
               ip: request.remote_ip,
               user_agent: request.user_agent,
               url: url,
